@@ -1,14 +1,12 @@
-*,
-*::after,
-*::before {
-	margin: 0;
-	padding: 0;
-}
-
 .text-gray-600 {
-	color: rgb(140, 140, 140);
+	color: var(--bs-gray-600);
 }
 
 .text-gray-800 {
-	color: rgb(80, 80, 80);
+	color: var(--bs-gray-800);
+}
+@media screen and (min-width: 678px) {
+	.w-sm-max {
+		width: max-content;
+	}
 }

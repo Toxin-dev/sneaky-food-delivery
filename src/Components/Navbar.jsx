@@ -3,10 +3,10 @@ export default props => {
 	return (
 		<Navbar expand='lg' fixed='top' className='bg-white'>
 			<Container>
-				<Navbar.Brand>Sneaky</Navbar.Brand>
+				<Navbar.Brand as='h1'>Sneaky</Navbar.Brand>
 				<Navbar.Toggle />
 				<Navbar.Collapse>
-					<Nav className='p-4 mt-2'>
+					<Nav className='p-4 mt-2 ms-auto'>
 						<Nav.Link>Home</Nav.Link>
 						<Nav.Link>About</Nav.Link>
 						<Nav.Link>Menu</Nav.Link>

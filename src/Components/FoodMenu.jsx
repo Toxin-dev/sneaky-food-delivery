@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 import { Container, Col, Row, Image, Stack } from "react-bootstrap";
 export default function FoodMenu(props) {
 	return (
-		<Container>
+		<Container as='section'>
 			{props.children}
 			{props.data.map((item, index) => (
 				<Stack

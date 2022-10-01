@@ -14,7 +14,7 @@ export default function Hero(props) {
 							most precious things
 						</h1>
 						<div>
-							<Button variant='danger'>Book Now</Button>
+							<Button variant='primary'>Book Now</Button>
 							<Button variant='link'>Watch video</Button>
 						</div>
 					</div>
@@ -27,10 +27,10 @@ export default function Hero(props) {
 									src={`https://source.unsplash.com/random/?${item.dish}`}
 									style={{
 										background: "red",
-										width: "360px",
+										width: "100%",
 										height: "400px",
 										objectFit: "cover",
-										objectPosition: "center center",
+										objectPosition: "center",
 									}}
 								/>
 							</Carousel.Item>

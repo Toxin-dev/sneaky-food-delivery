@@ -10,10 +10,14 @@ export default () => {
 				height: "500px",
 			}}>
 			<div className='m-auto text-center'>
-				<h2 className='bg-dark p-4 rounded text-white mb-4'>
+				<h2
+					className='p-4 rounded text-white mb-4'
+					style={{ background: "rgba(var(--bs-dark-rgb), .8)" }}>
 					Under replenish give saying thing
 				</h2>
-				<Button variant='danger'>Reservation</Button>
+				<Button variant='primary' size='lg'>
+					Reservation
+				</Button>
 			</div>
 		</Stack>
 	);

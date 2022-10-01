@@ -5,7 +5,7 @@ export default props => {
 		<Stack
 			style={{
 				padding: "2rem",
-				height: "95vh",
+				height: "80vh",
 				background:
 					"url('https://images.unsplash.com/photo-1613274554329-70f997f5789f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3RhdXJhbnR8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center fixed",
 				backgroundSize: "cover",
@@ -23,7 +23,7 @@ export default props => {
 					libero consequuntur?
 				</p>
 				<Form
-					onSubmit={e => console.log(e)}
+					onSubmit={e => e.preventDefault()}
 					noValidate
 					validated={true}
 					className='d-flex flex-column gap-4'>
@@ -40,7 +40,7 @@ export default props => {
 						type='phone'
 						required></Form.Control>
 					<Form.Control placeholder='Select place' required></Form.Control>
-					<Button type='submit' variant='danger'>
+					<Button type='submit' variant='secondary'>
 						Make reservation
 					</Button>
 				</Form>

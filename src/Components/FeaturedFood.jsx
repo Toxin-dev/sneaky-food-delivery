@@ -1,11 +1,12 @@
 import propTypes from "prop-types";
+import { useState } from "react";
 import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 
 export default function FeaturedFood(props) {
 	return (
 		<Container as='section'>
 			{props.children}
-			<Carousel>
+			<Carousel indicatorLabels={["test1"]}>
 				{props.data.map((item, index) => (
 					<Carousel.Item key={index}>
 						<Image
@@ -19,18 +20,20 @@ export default function FeaturedFood(props) {
 							}}
 						/>
 						<Carousel.Caption>
-							<Row>
-								<h4 className='text-capitalize bg-dark p-2'>
+							<Row as='span'>
+								<Col
+									as='h4'
+									xs={6}
+									className='mx-auto text-capitalize py-1'
+									style={{ background: "rgba(10,10,10,.4)" }}>
 									mountain mike pizza
-								</h4>
+								</Col>
 								<Row className='justify-content-center'>
-									<Col>
-										<p style={{ width: "max-content" }}>
-											Spice and tomato tangy
-										</p>
+									<Col as='p' xs='auto'>
+										Spicey and tangy tomato flavour
 									</Col>
-									<Col>
-										<p className='text-danger fw-bold'>$35</p>
+									<Col as='p' xs='auto'>
+										$35
 									</Col>
 								</Row>
 							</Row>

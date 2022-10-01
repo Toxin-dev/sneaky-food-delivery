@@ -22,7 +22,9 @@ export default props => {
 						molestiae, veniam laborum qui itaque sapiente, eveniet ea eum
 						placeat illo odit laboriosam autem perspiciatis?
 					</p>
-					<Button variant='danger'>Learn more</Button>
+					<Button variant='primary' className='w-sm-max'>
+						Learn more
+					</Button>
 				</Col>
 			</Row>
 		</Container>
