@@ -4,12 +4,12 @@ import { Container, Button, Col, Image, Row, Carousel } from "react-bootstrap";
 export default function Hero(props) {
 	return (
 		<Container>
-			<Row>
+			<Row className='d-flex align-items-center'>
 				<Col md={6}>
 					<div
-						className='d-flex flex-column justify-content-center align-items-center'
+						className='d-flex flex-column justify-content-center align-items-center align-items-sm-start'
 						style={{ height: "200px" }}>
-						<h1 className='text-center'>
+						<h1 className='text-center text-md-start fs-1'>
 							Foods the <br />
 							most precious things
 						</h1>
@@ -27,7 +27,7 @@ export default function Hero(props) {
 									src={`https://source.unsplash.com/random/?${item.dish}`}
 									style={{
 										background: "red",
-										width: "600px",
+										width: "360px",
 										height: "400px",
 										objectFit: "cover",
 										objectPosition: "center center",

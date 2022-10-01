@@ -3,13 +3,18 @@ export default props => {
 	return (
 		<Container>
 			<Row>
-				<Col sm={6}>
+				<Col sm={5}>
 					<Image
+						style={{
+							height: "300px",
+							width: "100%",
+							objectFit: "cover",
+							objectPosition: "top",
+						}}
 						src='https://source.unsplash.com/random/?food/300x600/'
-						fluid
 					/>
 				</Col>
-				<Col sm={6}>
+				<Col sm={7} className='d-flex flex-column justify-content-end'>
 					{props.children}
 					<p className='text-gray-500'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
