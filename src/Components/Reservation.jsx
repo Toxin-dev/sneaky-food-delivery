@@ -5,8 +5,8 @@ export default () => {
 		<Stack
 			style={{
 				background:
-					"url('https://source.unsplash.com/random/?cooking') no-repeat center center",
-				backgroundPosition: "fit",
+					"url('https://source.unsplash.com/random/?black-cook') no-repeat center center",
+				backgroundSize: "cover",
 				height: "500px",
 			}}>
 			<div className='m-auto text-center'>

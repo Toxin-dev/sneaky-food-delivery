@@ -10,9 +10,15 @@ import CTA from "./Components/CTA";
 import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
 import ListView from "./Components/Common/ListView";
+import {
+	OurChef as chefs,
+	hero as heroImages,
+	featured_food,
+	food_menu,
+} from "./util/dummyData";
 export default function App() {
 	function SectionSeprator() {
-		return <div className='mb-5'></div>;
+		return <div style={{ marginBottom: "10rem" }}></div>;
 	}
 	function Seprator() {
 		return <div className='mb-3'></div>;
@@ -20,7 +26,8 @@ export default function App() {
 	return (
 		<main>
 			<Navbar />
-			<Hero data={[{ dish: "sandwitch" }, { dish: "cake" }]} />
+			<SectionSeprator />
+			<Hero data={heroImages} />
 			<SectionSeprator />
 			<About>
 				<Heading
@@ -29,20 +36,20 @@ export default function App() {
 				/>
 			</About>
 			<SectionSeprator />
-			<FeaturedFood data={[{}, {}]}>
+			<FeaturedFood data={featured_food}>
 				<Heading
 					primary={"Featured food"}
 					secondary={"Fresh taste and greate price"}
 				/>
 			</FeaturedFood>
 			<SectionSeprator />
-			<FoodMenu data={[{}, {}]}>
+			<FoodMenu data={food_menu}>
 				<Heading primary='Food Menu' secondary='Deliciour food' />
 			</FoodMenu>
 			<SectionSeprator />
 			<Reservation />
 			<SectionSeprator />
-			<OurChef data={[{}, {}, {}]} />
+			<OurChef data={chefs} />
 			<SectionSeprator />
 			<CTA>
 				<Heading primary='Reservation' secondary='Get experience from sneaky' />

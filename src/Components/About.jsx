@@ -9,9 +9,9 @@ export default props => {
 							height: "300px",
 							width: "100%",
 							objectFit: "cover",
-							objectPosition: "top",
+							objectPosition: '0 70%'
 						}}
-						src='https://source.unsplash.com/random/?food/300x600/'
+						src='https://images.unsplash.com/photo-1593854823970-54d952ac1931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fGJvd2x8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
 					/>
 				</Col>
 				<Col sm={7} className='d-flex flex-column justify-content-end'>

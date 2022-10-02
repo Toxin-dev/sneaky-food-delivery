@@ -13,18 +13,18 @@ export default function FoodMenu(props) {
 					style={{ boxShadow: "0 0 10px rgba(200,200,200,.5)" }}>
 					<Image
 						className='rounded-circle'
-						src='https://source.unsplash.com/random/?food'
+						src={item.image}
 						width={85}
 						height={85}
 						style={{ objectFit: "cover", objectPosition: "center right" }}
 					/>
 					<Stack className='my-auto'>
-						<h4>Roasted Maarow</h4>
+						<h4>{item.title}</h4>
 						<p className='text-gray-600' style={{ width: "max-content" }}>
-							cold drinks, franch fries for best price
+							{item.desctiption}
 						</p>
 					</Stack>
-					<p className='text-danger fw-bold'>$32</p>
+					<p className='text-danger fw-bold'>${item.price}</p>
 				</Stack>
 			))}
 		</Container>

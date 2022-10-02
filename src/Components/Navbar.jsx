@@ -1,7 +1,7 @@
 import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 export default props => {
 	return (
-		<Navbar expand='lg' fixed='top' className='bg-white'>
+		<Navbar expand='lg' fixed='top' className='bg-white shadow-sm'>
 			<Container>
 				<Navbar.Brand as='h1'>Sneaky</Navbar.Brand>
 				<Navbar.Toggle />
