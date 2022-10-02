@@ -43,6 +43,7 @@ export default function App() {
 			<Reservation />
 			<SectionSeprator />
 			<OurChef data={[{}, {}, {}]} />
+			<SectionSeprator />
 			<CTA>
 				<Heading primary='Reservation' secondary='Get experience from sneaky' />
 			</CTA>
@@ -50,6 +51,7 @@ export default function App() {
 			<Blog data={[{}, {}, {}]}>
 				<Heading primary='Our Blog' secondary='Latest food and recipe news' />
 			</Blog>
+			<SectionSeprator />
 			<Footer>
 				<ListView
 					title='Top Products'

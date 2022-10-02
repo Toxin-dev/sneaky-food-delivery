@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 .text-gray-600 {
 	color: var(--bs-gray-600);
 }

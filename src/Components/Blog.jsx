@@ -5,7 +5,7 @@ export default function Blog(props) {
 		<Row style={{ width: "calc(100% - 8rem)", margin: "0 auto" }}>
 			{props.children}
 			{props.data.map((item, index) => (
-				<Col md={6}>
+				<Col md={4}>
 					<Card key={index} className='mb-4'>
 						<Card.Header className='p-0'>
 							<Image
